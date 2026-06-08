@@ -68,10 +68,7 @@ fun MainWeatherScreen(
     val notificationPermissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission()
     ) {
-        /*
-         * Если пользователь отказал, приложение всё равно работает,
-         * просто уведомления не будут показываться.
-         */
+
     }
 
     LaunchedEffect(Unit) {
